@@ -55,7 +55,6 @@ def load_checkpoints(config_path, checkpoint_path, cpu=True):
     
     return generator, kp_detector
 
-@st.cache
 def make_animation(source_image, driving_video, generator, kp_detector, relative=True, adapt_movement_scale=True, cpu=False):
     with torch.no_grad():
         predictions = []
