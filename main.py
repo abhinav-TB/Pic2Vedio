@@ -11,7 +11,7 @@ import imageio
 
 #import style
 
-st.title('Deep Fake style transfer')
+st.title('Pic2video Generator')
 img = st.file_uploader("upload image")
 
 # img = st.sidebar.selectbox(
@@ -19,20 +19,20 @@ img = st.file_uploader("upload image")
 #     ('amber.jpg', 'cat.png')
 # )
 
-# style_name = st.sidebar.selectbox(
-#     'Select Style',
-#     ('candy', 'mosaic', 'rain_princess', 'udnie')
-# )
-
+emotion = st.sidebar.selectbox(
+     'Select emotion',
+     ('smile', 'laughter', 'cry')
+ )
+col1, col2 = st.beta_columns(2)
 if img:
-    col1, col2 = st.beta_columns(2)
+   
     col1.write('### Source image:')
     image = Image.open(img)
     col1.image(image )  # image: numpy array
-    input_vedio = open('./input/04.mp4' , 'rb')
-    video_bytes = input_vedio.read()
-    col2.write("### Source video")
-    col2.video(video_bytes )
+    # input_vedio = open('./input/04.mp4' , 'rb')
+    # video_bytes = input_vedio.read()
+    # col2.write("### Source video")
+    # col2.video(video_bytes )
 
 clicked = st.button('Stylize')
 
@@ -41,8 +41,8 @@ if clicked:
     output = generate(asarray(image))
     video_file = open('result.mp4', 'rb')
     video_bytes = video_file.read()
-    col1, col2 = st.beta_columns(2)
-    col1.video(video_bytes)
+    col2.write('### Output Video')
+    col2.video(video_bytes)
 # model = style.load_model(model)
 # style.stylize(model, input_image, output_image)
 
