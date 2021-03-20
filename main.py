@@ -14,15 +14,12 @@ import imageio
 st.title('Pic2video Generator')
 img = st.file_uploader("upload image")
 
-# img = st.sidebar.selectbox(
-#     'Select Image',
-#     ('amber.jpg', 'cat.png')
-# )
 
-emotion = st.sidebar.selectbox(
-     'Select emotion',
-     ('smile', 'laughter', 'cry')
- )
+
+# emotion = st.sidebar.selectbox(
+#      'Select emotion',
+#      ('smile', 'laughter', 'cry')
+#  )
 col1, col2 = st.beta_columns(2)
 if img:
    
@@ -38,9 +35,11 @@ clicked = st.button('Stylize')
 
 if clicked:
     # image = imageio.imread(image)
-    output = generate(asarray(image))
-    video_file = open('result.mp4', 'rb')
-    video_bytes = video_file.read()
+    with st.spinner('Processing...'):
+        output = generate(asarray(image))
+        video_file = open('result.mp4', 'rb')
+        video_bytes = video_file.read()
+    st.success("Done!")
     col2.write('### Output Video')
     col2.video(video_bytes)
 # model = style.load_model(model)

@@ -108,7 +108,7 @@ def generate(src_img):
     reader = './input/04.mp4'
     config = './config/vox-256.yaml'
     checkpoint = './vox-cpk.pth.tar'
-    result_video = "result.mp4
+    result_video = "result.mp4"
     relative = "relative"
     adapt_scale = "adapt_scale"
     find_best_frame = True
