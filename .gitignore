@@ -3,5 +3,5 @@ __pycache__
 /venv
 /env
 vox-cpk.pth.tar
-/input
+# /input
 result.mp4
