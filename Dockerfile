@@ -12,11 +12,11 @@ ENV PATH = "$VIRTUAL_ENV/bin:$PATH"
 
 COPY . /app/
 WORKDIR /app
-EXPOSE 8501
+EXPOSE 3000
 RUN pip3 install --upgrade cython 
 RUN pip3 install pyarrow
 RUN pip3 install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 RUN python3 -m pip install -r requirements.txt
 
 
-CMD streamlit run main.py
+CMD streamlit run main.py --server.port 3000
