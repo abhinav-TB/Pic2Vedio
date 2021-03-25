@@ -23,10 +23,10 @@ imageio.plugins.ffmpeg.download()
 if sys.version_info[0] < 3:
     raise Exception("You must use Python 3 or higher. Recommended version is Python 3.7")
 @st.cache
-def load_checkpoints(config_path, checkpoint_path, cpu=True):
+def load_checkpoints(config_path, checkpoint_path, cpu=False):
 
     with open(config_path) as f:
-        config = yaml.load(f)
+        config = yaml.load(f , Loader=yaml.FullLoader)
 
     generator = OcclusionAwareGenerator(**config['model_params']['generator_params'],
                                         **config['model_params']['common_params'])
@@ -115,7 +115,7 @@ def generate(src_img):
     best_frame = True
     reader = imageio.get_reader(reader)
     fps = reader.get_meta_data()['fps']
-    cpu = False
+    cpu = not torch.cuda.is_available() 
     driving_video = []
     try:
         for im in reader:
