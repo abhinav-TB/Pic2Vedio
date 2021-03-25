@@ -1,0 +1,1 @@
+python demo.py  --config config/vox-256.yaml --driving_video ./input/obama_source.mp4  --source_image ./input/putin-img.png  --checkpoint ./vox-cpk.pth.tar --relative --adapt_scale --cpu
