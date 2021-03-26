@@ -1,10 +1,10 @@
 
 
-  <h3 align="center">Pic2Video</h3>
 
+  <h1 align="center"> Pic2Video</h1>
   <p align="center">
-    An awesome tool to convert a picture to video
-    <br />
+    A simple tool to animate your face using deeplearning
+    ,
     <a ></a>
     <br />
     <br />
