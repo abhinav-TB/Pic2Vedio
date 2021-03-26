@@ -1,6 +1,5 @@
 
 
-
   <h1 align="center"> Pic2Video</h1>
   <p align="center">
     A simple tool to animate your face using deeplearning
@@ -17,19 +16,11 @@
 </p>
 
 
-### Built With
-
-* [Pytorch](https://pytorch.org/)
-* [Streamlit](https://jquery.com)
-* [scikit-learn](https://streamlit.io/)
-
-
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 * python 3.7
@@ -47,14 +38,15 @@ To get a local copy up and running follow these simple example steps.
 4. pytorch model file which can be downloaded from [here](https://objectstorage.ap-hyderabad-1.oraclecloud.com/n/ax9kets4h5ld/b/pic2video_pth/o/vox-cpk.pth.tar)
    
 
-## Installation using docker
+### Installation using docker
+
 If your python packages is not compatible ,the Dockerfile inside the repo can be used  
 
 1 . ```docker build -t pic:v1 .```
 2 .  ```docker run -p 8501:8501 pic```
 
 <!-- USAGE EXAMPLES -->
-## Usage
+### Usage
 
 ```sh 
 streamlit run main.py
@@ -62,7 +54,7 @@ streamlit run main.py
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+### Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -72,17 +64,22 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+### Built With
+
+* [Pytorch](https://pytorch.org/)
+* [Streamlit](https://jquery.com)
+* [scikit-learn](https://streamlit.io/)
 
 
 <!-- LICENSE -->
-## License
+###  License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
 <!-- CONTACT -->
-## Contact
+### Contact
 
 [@abhiGamez](https://twitter.com/abhiGamez) on twitter
 
