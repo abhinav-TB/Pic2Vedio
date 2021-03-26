@@ -1,12 +1,11 @@
 
 
-
   <h3 align="center">Pic2Video</h3>
 
   <p align="center">
     An awesome tool to convert a picture to video
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a ></a>
     <br />
     <br />
 <!--     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a> -->
@@ -16,34 +15,6 @@
     <a href="https://github.com/abhinav-TB/Pic2Vedio/issues">Request Feature</a>
   </p>
 </p>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
 
 
 ### Built With
@@ -61,10 +32,7 @@ This is an example of how you may give instructions on setting up your project l
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
 * python 3.7
-* pytorch model file which can be downloaded from [here](https://objectstorage.ap-hyderabad-1.oraclecloud.com/n/ax9kets4h5ld/b/pic2video_pth/o/vox-cpk.pth.tar)
 
 ### Installation
 
@@ -79,15 +47,19 @@ This is an example of how to list things you need to use the software and how to
 4. pytorch model file which can be downloaded from [here](https://objectstorage.ap-hyderabad-1.oraclecloud.com/n/ax9kets4h5ld/b/pic2video_pth/o/vox-cpk.pth.tar)
    
 
+## Installation using docker
+If your python packages is not compatible ,the Dockerfile inside the repo can be used  
 
+1 . ```docker build -t pic:v1 .```
+2 .  ```docker run -p 8501:8501 pic```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-```streamlit run main.py
+```sh 
+streamlit run main.py
+```
 
-<!-- ROADMAP -->
-## Roadmap
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -112,7 +84,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@abhiGamez](https://twitter.com/abhiGamez) 
+[@abhiGamez](https://twitter.com/abhiGamez) on twitter
 
 
 
