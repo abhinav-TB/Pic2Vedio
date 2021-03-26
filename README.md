@@ -43,6 +43,7 @@
 If your python packages is not compatible ,the Dockerfile inside the repo can be used  
 
 1 . ```docker build -t pic:v1 .```
+
 2 .  ```docker run -p 8501:8501 pic```
 
 <!-- USAGE EXAMPLES -->
