@@ -2,8 +2,7 @@
 
   <h1 align="center"> Pic2Video</h1>
   <p align="center">
-    A simple tool to animate your face using deeplearning
-    ,
+    An AI driven tool to transfer the motion of a driving video to an image input
     <a ></a>
     <br />
     <br />
