@@ -8,9 +8,14 @@ from PIL import Image
 from model import generate
 from numpy import asarray
 import imageio
-
 #import style
-
+import wget
+import os
+if not os.path.exists('./vox-cpk.pth.tar'):
+    print("downloading model")
+    wget.download('https://objectstorage.ap-hyderabad-1.oraclecloud.com/n/ax9kets4h5ld/b/pic2video_pth/o/vox-cpk.pth.tar')
+else :
+    print("model found")    
 st.title('Pic2video Generator')
 img = st.file_uploader("upload image")
 
