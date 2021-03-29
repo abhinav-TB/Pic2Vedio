@@ -23,6 +23,7 @@
 
 ### Prerequisites
 * python 3.7
+* Nvidia GPU with cuda support
 
 ### Installation
 
